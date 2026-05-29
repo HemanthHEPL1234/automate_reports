@@ -2,7 +2,7 @@ name: Daily P0 Bug Email
 
 on:
   schedule:
-    - cron: '11 14 * * *'  # 7:41 PM IST = 14:11 UTC (test)
+    - cron: '21 14 * * *'  # 7:51 PM IST = 14:21 UTC (test)
   workflow_dispatch:         # Allow manual trigger from GitHub UI
 
 jobs:
