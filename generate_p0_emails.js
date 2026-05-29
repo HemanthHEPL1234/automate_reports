@@ -18,7 +18,7 @@ const EXCLUDED_STATUSES = ['8', '9', '10', '12', '16'];
 
 // OpenProject assignee name → work email
 const ASSIGNEE_EMAILS = {
-  'Mubarak K':          'hemanth.a@hepl.com, ghr30042001@gmail.com',
+  'Mubarak K':          'mubarak.k@hepl.com',
   'Retchagaraj D':      'retchagaraj.d@hepl.com',
   'Divya Priya T':      'divya.t@hepl.com',
   'Prakash Kannan':     'prakash.k@hepl.com',
