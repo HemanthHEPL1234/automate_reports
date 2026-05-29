@@ -1,0 +1,9 @@
+{
+  "name": "op-bug-reports",
+  "version": "1.0.0",
+  "description": "OpenProject P0 bug email automation",
+  "main": "generate_p0_emails.js",
+  "dependencies": {
+    "nodemailer": "^6.9.13"
+  }
+}
