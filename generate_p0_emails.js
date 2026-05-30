@@ -20,21 +20,20 @@ const STATUS_IN_PROGRESS  = 7;
 const STATUS_DEVELOPED    = 8;
 
 // OpenProject assignee name → work email
-const TEST_RECIPIENTS = 'hemanth.a@hepl.com, ghr30042001@gmail.com';
 const ASSIGNEE_EMAILS = {
-  'Mubarak K':          TEST_RECIPIENTS,
-  'Retchagaraj D':      TEST_RECIPIENTS,
-  'Divya Priya T':      TEST_RECIPIENTS,
-  'Prakash Kannan':     TEST_RECIPIENTS,
-  'Premkumar L':        TEST_RECIPIENTS,
-  'Thanneeru Mahendra': TEST_RECIPIENTS,
-  'Mani Veerendra':     TEST_RECIPIENTS,
-  'Hemanth A':          TEST_RECIPIENTS,
-  'Aruna S':            TEST_RECIPIENTS,
-  'Rajesh C':           TEST_RECIPIENTS,
-  'Akhilesh P':         TEST_RECIPIENTS,
-  'Nannuri K':          TEST_RECIPIENTS,
-  'Dhamotharan M':      TEST_RECIPIENTS,
+  'Mubarak K':          'mubarak.k@hepl.com',
+  'Retchagaraj D':      'retchagaraj.d@hepl.com',
+  'Divya Priya T':      'divya.t@hepl.com',
+  'Prakash Kannan':     'prakash.k@hepl.com',
+  'Premkumar L':        'prem.l@hepl.com',
+  'Thanneeru Mahendra': 'thanneeru.m@hepl.com',
+  'Mani Veerendra':     'mani.v@hepl.com',
+  'Hemanth A':          'hemanth.a@hepl.com',
+  'Aruna S':            'aruna.s@hepl.com',
+  'Rajesh C':           'rajesh.c@hepl.com',
+  'Akhilesh P':         'akhilesh.p@hepl.com',
+  'Nannuri K':          'nannuri.k@hepl.com',
+  'Dhamotharan M':      'dhamotharan.m@hepl.com',
 };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
