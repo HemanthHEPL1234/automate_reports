@@ -1,0 +1,42 @@
+name: Jenkins Failure Monitor
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'   # every 5 min (triggered by cron-job.org — GitHub cron unreliable)
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Jenkins monitor
+        run: node jenkins_monitor.js
+        env:
+          JENKINS_USER:               ${{ secrets.JENKINS_USER }}
+          JENKINS_PASS:               ${{ secrets.JENKINS_PASS }}
+          GMAIL_USER_PIPELINE:        ${{ secrets.GMAIL_USER_PIPELINE }}
+          GMAIL_APP_PASSWORD_PIPELINE: ${{ secrets.GMAIL_APP_PASSWORD_PIPELINE }}
+
+      - name: Commit updated state
+        run: |
+          git config user.name  "CADP Pipeline Monitor"
+          git config user.email "cadppipelinemanager@gmail.com"
+          git add jenkins_state.json
+          git diff --cached --quiet || git commit -m "chore: update jenkins monitor state [skip ci]"
+          git push
