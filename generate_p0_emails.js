@@ -150,17 +150,23 @@ function buildStatusReport(assignee, devBugs, ipBugs, newBugs) {
 
   const wb = XLSX.utils.book_new();
 
-  // Sheet 1 — Developed
-  const s1 = [baseHeaders, ...myDev.map(row), [], ['Total', myDev.length]];
-  XLSX.utils.book_append_sheet(wb, makeSheet(s1, baseCols), 'Developed Bugs');
+  // Sheet 1 — Developed (only if bugs exist)
+  if (myDev.length > 0) {
+    const s1 = [baseHeaders, ...myDev.map(row), [], ['Total', myDev.length]];
+    XLSX.utils.book_append_sheet(wb, makeSheet(s1, baseCols), 'Developed Bugs');
+  }
 
-  // Sheet 2 — In-Progress
-  const s2 = [baseHeaders, ...myIP.map(row), [], ['Total', myIP.length]];
-  XLSX.utils.book_append_sheet(wb, makeSheet(s2, baseCols), 'In-Progress Bugs');
+  // Sheet 2 — In-Progress (only if bugs exist)
+  if (myIP.length > 0) {
+    const s2 = [baseHeaders, ...myIP.map(row), [], ['Total', myIP.length]];
+    XLSX.utils.book_append_sheet(wb, makeSheet(s2, baseCols), 'In-Progress Bugs');
+  }
 
-  // Sheet 3 — New
-  const s3 = [baseHeaders, ...myNew.map(row), [], ['Total', myNew.length]];
-  XLSX.utils.book_append_sheet(wb, makeSheet(s3, baseCols), 'New Bugs');
+  // Sheet 3 — New (only if bugs exist)
+  if (myNew.length > 0) {
+    const s3 = [baseHeaders, ...myNew.map(row), [], ['Total', myNew.length]];
+    XLSX.utils.book_append_sheet(wb, makeSheet(s3, baseCols), 'New Bugs');
+  }
 
   // Sheet 4 — Pivot Assignee × Status (only their bugs)
   const statusCounts = {};
