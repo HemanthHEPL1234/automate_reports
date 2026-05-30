@@ -350,7 +350,7 @@ async function main() {
             </table>
           </div>
           <div style="padding:16px 32px 24px;border-top:1px solid #e5e7eb;font-size:12px;color:#9ca3af">
-            This is an automated daily report. The full breakdown is in the attached XLSX file.
+            This is an automated daily report. Please resolve and if resolved, update the status of these bugs. The full breakdown is in the attached XLSX file.
           </div>
         </div>`,
       attachments: [{
