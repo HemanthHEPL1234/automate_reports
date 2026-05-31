@@ -24,7 +24,7 @@ const ASSIGNEE_EMAILS = {
   'Mubarak K':          'mubarak.k@hepl.com',
   'Retchagaraj D':      'retchagaraj.d@hepl.com',
   'Divya Priya T':      'divya.t@hepl.com',
-  'Prakash Kannan':     'prakash.k@hepl.com',
+  'Prakash Kannan':     'prakash.se@hepl.com',
   'Premkumar L':        'prem.l@hepl.com',
   'Thanneeru Mahendra': 'thanneeru.m@hepl.com',
   'Mani Veerendra':     'mani.v@hepl.com',
