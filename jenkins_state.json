@@ -1,1 +1,42 @@
-{}
+{
+  "cadp-chat-backend": {
+    "lastChecked": 4,
+    "lastResult": "SUCCESS"
+  },
+  "CADP_Client_WS_backend": {
+    "lastChecked": 118,
+    "lastResult": "SUCCESS"
+  },
+  "CADP_Client_WS_Metadata_Backend_Node": {
+    "lastChecked": 90,
+    "lastResult": "SUCCESS"
+  },
+  "CADP_master_backend_nodejs": {
+    "lastChecked": 182,
+    "lastResult": "SUCCESS"
+  },
+  "cadp_notification_backend_nodejs": {
+    "lastChecked": 125,
+    "lastResult": "SUCCESS"
+  },
+  "CADP_platform_backend_nodejs": {
+    "lastChecked": 51,
+    "lastResult": "SUCCESS"
+  },
+  "CADP_RBAC_backend_nodejs": {
+    "lastChecked": 237,
+    "lastResult": "SUCCESS"
+  },
+  "Cadp_template_backend_nodejs": {
+    "lastChecked": 50,
+    "lastResult": "SUCCESS"
+  },
+  "cadp_workflow_backend_nodejs": {
+    "lastChecked": 125,
+    "lastResult": "SUCCESS"
+  },
+  "Cadp-portal": {
+    "lastChecked": 379,
+    "lastResult": "SUCCESS"
+  }
+}
